@@ -19,7 +19,6 @@ with open('urls.txt', 'w') as result:
         if r.status_code != 404:
           result.write(f'{r.url}: {r.status_code}\n')
 
-
   def thread2():
     for i, val in enumerate(f):
       if i > len(f)/4 and i <= len(f)*2/4:
